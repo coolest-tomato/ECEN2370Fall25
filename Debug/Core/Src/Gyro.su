@@ -1,0 +1,10 @@
+../Core/Src/Gyro.c:13:6:Gyro_Init	80	static
+../Core/Src/Gyro.c:55:6:Gyro_Power	16	static
+../Core/Src/Gyro.c:66:6:Gyro_Configure	8	static
+../Core/Src/Gyro.c:74:9:Gyro_Read	32	static
+../Core/Src/Gyro.c:86:6:Gyro_Write	24	static
+../Core/Src/Gyro.c:96:6:Gyro_SPI_Check	4	static
+../Core/Src/Gyro.c:102:6:Gyro_Enable_Slave	8	static
+../Core/Src/Gyro.c:106:6:Gyro_Disable_Slave	8	static
+../Core/Src/Gyro.c:110:9:Gyro_Get_Velocity	16	static
+../Core/Src/Gyro.c:118:6:Gyro_Sample	16	static
