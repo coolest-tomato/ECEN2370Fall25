@@ -11,8 +11,8 @@
 ../Core/Src/ApplicationCode.c:294:6:MoveCoin_Gyro	7
 ../Core/Src/ApplicationCode.c:323:6:Connect4	34
 ../Core/Src/ApplicationCode.c:402:6:IsTie	8
-../Core/Src/ApplicationCode.c:417:6:Computer_Turn	36
-../Core/Src/ApplicationCode.c:521:6:Computer_Drop	7
-../Core/Src/ApplicationCode.c:555:6:DisplayFinalScreen	10
-../Core/Src/ApplicationCode.c:621:6:Reset_Game	4
-../Core/Src/ApplicationCode.c:646:6:applicationInitGyro	1
+../Core/Src/ApplicationCode.c:417:6:Computer_Turn	38
+../Core/Src/ApplicationCode.c:526:6:Computer_Drop	7
+../Core/Src/ApplicationCode.c:560:6:DisplayFinalScreen	10
+../Core/Src/ApplicationCode.c:626:6:Reset_Game	4
+../Core/Src/ApplicationCode.c:651:6:applicationInitGyro	1

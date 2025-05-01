@@ -111,8 +111,6 @@ int main(void)
 
   ApplicationInit(); // Initializes the LCD functionality
   applicationInitGyro();
-  Gyro_Power();
-  Gyro_Configure();
   Draw_MainMenu(); // Draw Main Menue
   // LCD_Visual_Demo();
   //HAL_Delay(5000);

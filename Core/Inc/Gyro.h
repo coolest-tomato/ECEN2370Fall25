@@ -82,13 +82,13 @@
 void Gyro_Init(void);
 
 // A prototype to get the device ID and print it
-// void Gyro_GetID(void);
+void Gyro_GetID(void);
 
 // A prototype to power the Gyro
  void Gyro_Power(void);
 
 // A prototype to get the temperature and print it
-// void Gyro_GetTemp(void);
+void Gyro_GetTemp(void);
 
 // A prototype to configure the registers on the Gyro
 void Gyro_Configure(void);

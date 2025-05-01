@@ -47,10 +47,10 @@ void Gyro_Init(void){
 	HAL_SPI_Init(&HSPI);
 }
 
-//void Gyro_GetID(void){
-//	uint8_t foo = Gyro_Read(GYRO_WHO_AM_I);
-//	printf("Device ID is %x \n", foo);
-//}
+void Gyro_GetID(void){
+	uint8_t foo = Gyro_Read(GYRO_WHO_AM_I);
+	printf("Device ID is %x \n", foo);
+}
 
 void Gyro_Power(void){
 	uint8_t temp = Gyro_Read(GYRO_CTRL_REG1);
@@ -58,10 +58,10 @@ void Gyro_Power(void){
 	Gyro_Write(GYRO_CTRL_REG1, temp);
 	}
 
-//void Gyro_GetTemp(void){
-//	uint8_t foo = Gyro_Read(GYRO_OUT_TEMP);
-//	printf("Temperature: %d Celsius degrees. \n", foo);
-//}
+void Gyro_GetTemp(void){
+	uint8_t foo = Gyro_Read(GYRO_OUT_TEMP);
+	printf("Temperature: %d Celsius degrees. \n", foo);
+}
 
 void Gyro_Configure(void){
 	Gyro_Write(GYRO_CTRL_REG1,POWER_EN_AND_XYZ_EN);
@@ -110,7 +110,7 @@ int16_t Gyro_Get_Velocity() {
 	uint8_t y_l = Gyro_Read(GYRO_OUT_Y_L);
 	uint8_t y_h = Gyro_Read(GYRO_OUT_Y_H);
 
-	int16_t y_val = (int16_t)((y_h << 8) | y_l);
+	volatile int16_t y_val = (int16_t)((y_h << 8) | y_l);
 	return y_val;
 }
 

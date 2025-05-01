@@ -185,7 +185,7 @@ void GamePlay_2P(){
 		DrawCoin();
 
 		while(events_to_run & TURN_OVER){
-			  Gyro_Sample();
+			  // Gyro_Sample();
 			  MoveCoin();
 			  events_to_run = getScheduledEvents();
 			  if(events_to_run & DROP_COIN){
@@ -426,7 +426,12 @@ void Computer_Turn() {
 	                Computer_Drop();
 	                return;
 	            }
-	            board[r][c] = 0;
+	            if (board[r][c] == 2){
+	            	board[r][c] = 0;
+	            }
+	            else if(board[r][c] == 1){
+	            	board[r][c] = 1;
+	            }
 	        }
 	    }
 
@@ -441,7 +446,7 @@ void Computer_Turn() {
 	                Computer_Drop();
 	                return;
 	            }
-	            board[r][c] = 0;
+	            	board[r][c] = 0;
 	        }
 	    }
 
@@ -648,6 +653,8 @@ void applicationInitGyro(){
 	__HAL_RCC_GPIOC_CLK_ENABLE();
 	Gyro_Init();
 	HAL_Delay(100);
+	Gyro_Power();
+	Gyro_Configure();
 }
 
 

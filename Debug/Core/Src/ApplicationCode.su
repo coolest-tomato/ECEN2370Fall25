@@ -12,7 +12,7 @@
 ../Core/Src/ApplicationCode.c:323:6:Connect4	24	static
 ../Core/Src/ApplicationCode.c:402:6:IsTie	4	static
 ../Core/Src/ApplicationCode.c:417:6:Computer_Turn	128	static
-../Core/Src/ApplicationCode.c:521:6:Computer_Drop	8	static
-../Core/Src/ApplicationCode.c:555:6:DisplayFinalScreen	112	static
-../Core/Src/ApplicationCode.c:621:6:Reset_Game	24	static
-../Core/Src/ApplicationCode.c:646:6:applicationInitGyro	16	static
+../Core/Src/ApplicationCode.c:526:6:Computer_Drop	8	static
+../Core/Src/ApplicationCode.c:560:6:DisplayFinalScreen	112	static
+../Core/Src/ApplicationCode.c:626:6:Reset_Game	24	static
+../Core/Src/ApplicationCode.c:651:6:applicationInitGyro	16	static
